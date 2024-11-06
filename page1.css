@@ -1,0 +1,66 @@
+.fade-in {
+    opacity: 0;
+    animation: fadeInEffect 1s ease-in forwards;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeInEffect {
+    to {
+        opacity: 1;
+    }
+}
+
+.container{
+    place-items: center;
+    display: grid;
+    height: 90vh;
+}
+
+.logo img{
+    max-width: 65%;
+    height: auto;
+    margin-left: 19%;
+    transition: transform 5s ease, opacity 5s ease; 
+}
+
+.logo a{
+    display: inline-block;
+    transition: 5s ease, opacity 5s ease;
+}
+
+.logo:hover{
+    opacity: 0.7;
+}
+
+.logo a:active img{
+    transform: scale(2);
+    opacity: 0.7;
+}
+
+.line1 {
+    width: 100%; 
+    height: 4px; 
+    background-color: #333; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    margin-top: 2%;
+}
+
+.line2 {
+    width: 100%; 
+    height: 4px; 
+    background-color: #333; 
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    margin-bottom: 2%;
+}
+
+.message{
+    font-size: 16px;
+    font-family: monospace ;
+    place-items: center;
+    margin-left: 17.5%;
+}
+
